@@ -21,12 +21,12 @@ In first bootup, secure boot is not enabled. Preload firmware generates vault ke
 
 ### Second Bootup
 mcuboot generate certificates, Device Firmware verifies the generated certificate and erase preload fw.  
-![alt text](doc/2ndbooup.png)
+![alt text](doc/2ndbootup.png)
 
 ### Third Bootup
 mcuboot recovers the 1st slot firmware by customer’s firmware.
-![alt text](doc/3rdbooup.png)
+![alt text](doc/3rdbootup.png)
 
 ### Forth Bootup
 Since 1st slot firmware is replaced from preload fw to customer’s firmware. Mcuboot regenerate alias certificate, verify and boot customer’s firmware.
-![alt text](doc/4thbooup.png)
+![alt text](doc/4thbootup.png)
