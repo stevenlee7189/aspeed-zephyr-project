@@ -15,7 +15,7 @@ Please note that all OTP operation are simulated in ast1060 internal flash.
 AST1060 should be bootup 3 times in manufactureing process
 
 ### First Bootup
-In first bootup, secure boot is not enabled. Preload firmware generates vault key for CDI generation, write public key to OTP and enables secure boot.
+In first bootup, secure boot is not enabled. Preload firmware generates vault key for CDI generation, write public key to OTP and enables secure boot.  
 
 ![alt text](doc/1stbooup.png)
 
@@ -24,9 +24,9 @@ mcuboot generate certificates, Device Firmware verifies the generated certificat
 ![alt text](doc/2ndbootup.png)
 
 ### Third Bootup
-mcuboot recovers the 1st slot firmware by customer’s firmware.
+mcuboot recovers the 1st slot firmware by customer’s firmware.  
 ![alt text](doc/3rdbootup.png)
 
 ### Forth Bootup
-Since 1st slot firmware is replaced from preload fw to customer’s firmware. Mcuboot regenerate alias certificate, verify and boot customer’s firmware.
+Since 1st slot firmware is replaced from preload fw to customer’s firmware. Mcuboot regenerate alias certificate, verify and boot customer’s firmware.  
 ![alt text](doc/4thbootup.png)
